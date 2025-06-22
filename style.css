@@ -1,0 +1,33 @@
+        body {
+            font-family: 'Montserrat', sans-serif;
+            color: #4a4a4a;
+            background-color: #fff9f9;
+            overflow-x: hidden;
+        }
+        .heading-font {
+            font-family: 'Playfair Display', serif;
+        }
+        .bg-pattern {
+            background-image: radial-gradient(#f3d8e0 2px, transparent 2px);
+            background-size: 30px 30px;
+        }
+        .couple-name {
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+        .heart-beat {
+            animation: heartbeat 1.5s ease-in-out infinite both;
+        }
+        @keyframes heartbeat {
+            0% { transform: scale(1); }
+            25% { transform: scale(1.05); }
+            50% { transform: scale(1); }
+            75% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        .fade-in {
+            animation: fadeIn 1.5s ease-out;
+        }
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }

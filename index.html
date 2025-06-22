@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Undangan Pernikahan Kami</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=Montserrat:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-pattern">
+    <div class="min-h-screen flex flex-col overflow-hidden">
+      <!-- Hero Section -->
+      <section
+        class="relative h-screen flex items-center justify-center bg-gradient-to-b from-pink-50 to-white"
+      >
+        <div class="absolute inset-0 opacity-20">
+          <div
+            class="absolute top-0 left-0 w-full h-full bg-center bg-cover"
+            style="
+              background-image: url('https://images.unsplash.com/photo-1519225421980-715cb0215aed?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            "
+          ></div>
+        </div>
+
+        <div class="relative z-10 text-center px-4">
+          <p class="text-xl md:text-2xl mb-4 tracking-widest text-pink-600">
+            UNDANGAN PERNIKAHAN
+          </p>
+          <h1
+            class="heading-font text-4xl md:text-7xl font-bold mb-4 coupe-name text-pink-800"
+          >
+            <span class="block">Sopan</span>
+            <span
+              class="heart-beat inline-block mx-4 text-4xl md:text-6xl text-red-500"
+              >&</span
+            >
+            <span class="block">Bunga</span>
+          </h1>
+          <p class="text-lg md:text-xl max-w-2xl mx-auto">
+            Kami berbahagia untuk mengundang Anda merayakan hari spesial
+            pernikahan kami.
+          </p>
+          <div class="mt-8">
+            <p class="text-pink-600">12 • 7 • 2025</p>
+            <div id="countdown" class="flex justify-center mt-4 gap-4">
+              <div class="text-center">
+                <div class="text-2xl md:text-4xl font-bold days">00</div>
+                <div class="text-sm">Hari</div>
+              </div>
+              <div class="text-center">
+                <div class="text-2xl md:text-4xl font-bold hours">00</div>
+                <div class="text-sm">Jam</div>
+              </div>
+              <div class="text-center">
+                <div class="text-2xl md:text-4xl font-bold minutes">00</div>
+                <div class="text-sm">Menit</div>
+              </div>
+              <div class="text-center">
+                <div class="text-2xl md:text-4xl font-bold seconds">00</div>
+                <div class="text-sm">Detik</div>
+              </div>
+            </div>
+          </div>
+          <div class="mt-12">
+            <button
+              onclick="document.getElementById('details').scrollIntoView({behavior: 'smooth'})"
+              class="px-6 py-3 bg-pink-600 hover:bg-pink-700 text-white rounded-full transition-all duration-300 transform hover:scale-105"
+            >
+              Lihat Detail Acara
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Couple Story -->
+      <section class="py-20 px-4 max-w-6xl mx-auto fade-in">
+        <div class="text-center mb-12">
+          <h2
+            class="heading-font text-3xl md:text-4xl font-bold mb-4 text-pink—800"
+          >
+            Our Love Story
+          </h2>
+          <div class="w-24 h-1 bg-pink-400 mx-auto"></div>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8 items-center">
+          <div
+            class="relative overflow-hidden rounded-lg shadow-lg h-64 md:h-80"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1534973703771-bc0b2f5e7de8?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
+              alt="First Meet"
+              class="w-full h-full object-cover"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-6"
+            >
+              <div>
+                <h3 class="text-white font-bold">Pertemuan Pertama</h3>
+                <p class="text-white/80 text-sm mt-1">12 Juni 2018</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="relative overflow-hidden rounded-lg shadow-lg h-64 md:h-80 order-last md:order-none"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
+              alt="Proposal"
+              class="w-full h-full object-cover"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-6"
+            >
+              <div>
+                <h3 class="text-white font-bold">Lamaran</h3>
+                <p class="text-white/80 text-sm mt-1">14 Februari 2023</p>
+              </div>
+            </div>
+          </div>
+          <div class="text-center mb-8 md:mb-0">
+            <div class="flex justify-center mb-6">
+              <span class="text-5xl text-pink-600 animate-pulse">♥</span>
+            </div>
+            <p class="mb-4">
+              "Tuhan menuliskan kisah terindah dalam kehidupan kami, dan kini
+              saatnya kami membangun keluarga kecil bersama."
+            </p>
+            <p class="text-sm text-gray-500">- Sopan & Bunga -</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Event Details -->
+      <section id="details" class="py-20 px-4 bg-pink-50 fade-in">
+        <div class="max-w-6xl mx-auto">
+          <div class="text-center mb-12">
+            <h2
+              class="heading-font text-3xl md:text-4xl font-bold mb-4 text-pink-800"
+            >
+              Detail Acara
+            </h2>
+            <div class="w-24 h-1 bg-pink-400 mx-auto"></div>
+          </div>
+          <div class="grid md:grid-cols-2 gap-8">
+            <div class="bg-white rounded-lg shadow-lg p-8">
+              <h3
+                class="heading-font text-2xl font-bold mb-4 text-center text-pink-700"
+              >
+                Akad Nikah
+              </h3>
+              <div class="flex items-center justify-center mb-4 text-pink-600">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6 mr-2"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                  />
+                </svg>
+                <span>Sabtu, 12 Juli 2025</span>
+              </div>
+              <div class="flex items-center justify-center mb-4 text-pink-600">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6 mr-2"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+                <span>08.00 - 10.00 WIB</span>
+              </div>
+              <div class="flex items-start justify-center mb-6 text-pink-600">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6 mr-2 mt-1 flex-shrink-0"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                  />
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                  />
+                </svg>
+                <span
+                  >Masjid Al-Barkah<br />Jl. Kenangan No. 123<br />Bandung, Jawa
+                  Barat</span
+                >
+              </div>
+              <div class="text-center">
+                <a
+                  href="https://goo.gl/maps/example"
+                  target="_blank"
+                  class="inline-block px-4 py-2 bg-pink-600 hover:bg-pink-700 text-white rounded-lg transition-all"
+                  >Lihat di Peta</a
+                >
+              </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-lg p-8">
+              <h3
+                class="heading-font text-2xl font-bold mb-4 text-center text-pink-700"
+              >
+                Resepsi
+              </h3>
+              <div class="flex items-center justify-center mb-4 text-pink-600">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6 mr-2"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                  />
+                </svg>
+                <span>Minggu, 11 November 2024</span>
+              </div>
+              <div class="flex items-center justify-center mb-4 text-pink-600">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6 mr-2"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+                <span>11.00 - 15.00 WIB</span>
+              </div>
+              <div class="flex items-start justify-center mb-6 text-pink-600">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6 mr-2 mt-1 flex-shrink-0"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                  />
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                  />
+                </svg>
+                <span
+                  >Gedung Serba Guna<br />Jl. Harmoni No. 45<br />Bandung, Jawa
+                  Barat</span
+                >
+              </div>
+              <div class="text-center">
+                <a
+                  href="https://goo.gl/maps/example"
+                  target="_blank"
+                  class="inline-block px-4 py-2 bg-pink-600 hover:bg-pink-700 text-white rounded-lg transition-all"
+                  >Lihat di Peta</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-12 text-center">
+            <p class="text-pink-800 mb-4">
+              Segala doa restu dari Anda sangat kami harapkan.
+            </p>
+            <p>
+              "Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan
+              untukmu pasangan hidup dari jenismu sendiri supaya kamu cenderung
+              dan merasa tenteram kepadanya, dan dijadikan-Nya di antaramu rasa
+              kasih dan sayang."
+            </p>
+            <p class="text-sm text-gray-600 mt-2">(QS. Ar-Rum: 21)</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Gallery -->
+      <section class="py-20 px-4 fade-in">
+        <div class="max-w-6xl mx-auto">
+          <div class="text-center mb-12">
+            <h2
+              class="heading-font text-3xl md:text-4xl font-bold mb-4 text-pink-800"
+            >
+              Galeri Kami
+            </h2>
+            <div class="w-24 h-1 bg-pink-400 mx-auto"></div>
+          </div>
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div class="relative overflow-hidden rounded-lg shadow-md h-48">
+              <img
+                src="https://images.unsplash.com/photo-1523438885200-e635ba2c371e?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
+                alt="Gallery 1"
+                class="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+              />
+            </div>
+            <div class="relative overflow-hidden rounded-lg shadow-md h-48">
+              <img
+                src="https://images.unsplash.com/photo-1530046339910-2f1cb43c133b?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
+                alt="Gallery 2"
+                class="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+              />
+            </div>
+            <div class="relative overflow-hidden rounded-lg shadow-md h-48">
+              <img
+                src="https://images.unsplash.com/photo-1531077248213-b03b5ab87032?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
+                alt="Gallery 3"
+                class="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+              />
+            </div>
+            <div class="relative overflow-hidden rounded-lg shadow-md h-48">
+              <img
+                src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80
+"
+                alt="Gallery 4"
+                class="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+              />
+            </div>
+            <div class="relative overflow-hidden rounded-lg shadow-md h-48">
+              <img
+                src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
+                alt="Gallery 5"
+                class="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+              />
+            </div>
+            <div class="relative overflow-hidden rounded-lg shadow-md h-48">
+              <img
+                src="https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
+                alt="Gallery 6"
+                class="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+              />
+            </div>
+            <div class="relative overflow-hidden rounded-lg shadow-md h-48">
+              <img
+                src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
+                alt="Gallery 7"
+                class="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+              />
+            </div>
+            <div class="relative overflow-hidden rounded-lg shadow-md h-48">
+              <img
+                src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
+                alt="Gallery 8"
+                class="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Map Section -->
+      <section class="py-20 px-4 fade-in">
+        <div class="max-w-6xl mx-auto">
+          <div class="text-center mb-12">
+            <h2
+              class="heading-font text-3xl md:text-4xl font-bold mb-4 text-pink-800"
+            >
+              Lokasi Acara
+            </h2>
+            <div class="w-24 h-1 bg-pink-400 mx-auto"></div>
+            <p class="mt-4">
+              Lihat peta lokasi untuk membantu Anda menemukan tempat acara
+            </p>
+          </div>
+
+          <!-- Akad Nikah Map -->
+          <div class="mb-16">
+            <h3
+              class="heading-font text-2xl font-bold mb-6 text-center text-pink-700"
+            >
+              Lokasi Akad Nikah
+            </h3>
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+              <div class="h-80 w-full rounded-xl overflow-hidden shadow-lg">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d585.5841943072348!2d107.01653335990713!3d-6.305355833463826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sid!4v1750605070760!5m2!1sen!2sid"
+                  width="100%"
+                  height="100%"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  class="rounded-xl"
+                ></iframe>
+              </div>
+              <div>
+                <h4 class="text-xl font-semibold mb-2 text-pink-600">
+                  ----????-----
+                </h4>
+                <p class="mb-4">Jl. Babakan Senggol RT.004/RW.005, Mustikajaya, Kota Bekasi, Jawa Barat</p>
+                <p class="mb-4">
+                  <span class="font-medium">Waktu:</span> 08.00 - 10.00 WIB
+                </p>
+                <p class="mb-6">
+                  <span class="font-medium">Tanggal:</span> Minggu, 11 November
+                  2024
+                </p>
+                <a
+                  href="https://goo.gl/maps/example"
+                  target="_blank"
+                  class="inline-block px-6 py-2 bg-pink-600 hover:bg-pink-700 text-white rounded-lg transition-all"
+                >
+                  Buka di Google Maps
+                </a>
+              </div>
+            </div>
+          </div>
+
+      <!-- Closing Section -->
+      <section
+        class="py-16 px-4 text-center bg-gradient-to-b from-white to-pink-50 fade-in"
+      >
+        <h2 class="heading-font text-3xl font-bold mb-6 text-pink-800">
+          Terima Kasih
+        </h2>
+        <p class="max-w-2xl mx-auto mb-8">
+          Atas segala doa dan restu yang telah diberikan, kami mengucapkan
+          terima kasih yang sebesar-besarnya.
+        </p>
+        <div class="flex justify-center space-x-4 mb-8">
+          <a href="#" class="text-pink-600 hover:text-pink-800">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-8 w-8"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"
+              />
+            </svg>
+          </a>
+          <a href="#" class="text-pink-600 hover:text-pink-800">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-8 w-8"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+              />
+            </svg>
+          </a>
+          <a href="#" class="text-pink-600 hover:text-pink-800">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-8 w-8"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"
+              />
+            </svg>
+          </a>
+        </div>
+        <p class="text-sm text-gray-500">
+          © 2025 Undangan Pernikahan Sopan & Bunga. All Rights Reserved.
+        </p>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
