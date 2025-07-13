@@ -1,7 +1,7 @@
 # undangan-pernikahan
 
-💍 Wedding Invitation Website – Raka & Citra
-Selamat datang di repositori resmi Website Undangan Pernikahan Raka & Citra 🎉
+💍 Wedding Invitation Website – Soffan & Bunga
+Selamat datang di repositori resmi Website Undangan Pernikahan Soffan & Bunga 🎉
 
 Website ini dibuat dengan tampilan modern, minimalis, dan interaktif, dirancang untuk menjadi undangan digital yang dapat dibagikan ke keluarga dan sahabat secara praktis dan elegan.
 
